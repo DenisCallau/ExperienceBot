@@ -24,3 +24,7 @@ Some games presents your character experience in a Current/Total integer number 
 At first, the application was designed to work with a online game called Maple Story, which present the current/total experience as integers.
 With some refactors I extended the funcionallity to another game called Black Desert (where I got the example pictures above), which presents the current percentage of experience in the current level as floating-point number.
 A lot of refactor still need to be done to simplify the process of extending the functionallity to other games.
+
+<h3>Full screenshot with the application window on left side</h3>
+
+![image](https://user-images.githubusercontent.com/13944617/123716099-297d6880-d850-11eb-9ec3-511250bd1226.png)
