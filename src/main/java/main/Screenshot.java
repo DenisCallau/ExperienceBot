@@ -12,8 +12,8 @@ import java.io.IOException;
 
 public class Screenshot {
 
-    public String getCurrentExp(ExpLocations screenLocation) throws IOException, AWTException {
-        return this.takeScreenshot(new Rectangle(screenLocation.x, screenLocation.y, screenLocation.width, screenLocation.height));
+    public float getCurrentExp(ExpLocations screenLocation) throws IOException, AWTException {
+        return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.x, screenLocation.y, screenLocation.width, screenLocation.height)));
     }
 
     private String takeScreenshot(Rectangle area) throws IOException, AWTException {
@@ -62,7 +62,7 @@ public class Screenshot {
 
     private String doOcr(File file) {
         Tesseract tess4j = new Tesseract();
-        tess4j.setDatapath("C:/Program Files/Tesseract-OCR/tessdata");
+        tess4j.setDatapath("C:/Program Files (x86)/Tesseract-OCR/tessdata");
         tess4j.setLanguage("eng");
         tess4j.setTessVariable("tessedit_char_whitelist", "0123456789[].%");
 

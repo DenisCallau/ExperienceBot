@@ -2,21 +2,23 @@ package main;
 
 public class Hunt {
 
-    private Exp initialExp;
-    private Exp finishExp;
+    private float initialExp;
+    private float finishExp;
     private long initialTime;
     private long finishTime;
     private boolean hunting = false;
-    private Exp previousExp;
+    private float previousExp;
     private long lastExpGainedTime;
+    private long huntingTime;
 
-    public void startHunt(Exp currentExp) {
+    public void startHunt(float currentExp) {
         this.initialTime = System.currentTimeMillis();
+        this.lastExpGainedTime = 0;
         this.initialExp = currentExp;
         this.hunting = true;
     }
 
-    public void endHunt(Exp finishExp) {
+    public void endHunt(float finishExp) {
         this.finishTime = System.currentTimeMillis();
         this.finishExp = finishExp;
         this.hunting = false;
@@ -26,11 +28,11 @@ public class Hunt {
         return this.hunting;
     }
 
-    public Exp getPreviousExp() {
+    public float getPreviousExp() {
         return previousExp;
     }
 
-    public void setPreviousExp(Exp previousExp) {
+    public void setPreviousExp(float previousExp) {
         this.previousExp = previousExp;
     }
 
@@ -42,15 +44,15 @@ public class Hunt {
         this.lastExpGainedTime = lastExpGainedTime;
     }
 
-    public Exp getInitialExp() {
+    public float getInitialExp() {
         return initialExp;
     }
 
-    public void setInitialExp(Exp initialExp) {
+    public void setInitialExp(float initialExp) {
         this.initialExp = initialExp;
     }
 
-    public Exp getFinishExp() {
+    public float getFinishExp() {
         return finishExp;
     }
 
@@ -60,6 +62,10 @@ public class Hunt {
 
     public long getFinishTime() {
         return finishTime;
+    }
+
+    public long getHuntingTime() {
+        return System.currentTimeMillis() - this.initialTime;
     }
 
 }

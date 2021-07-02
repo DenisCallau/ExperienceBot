@@ -4,14 +4,16 @@ public class Session {
 
     private int initialLevel;
     private int finishLevel;
-    private Exp initialExp;
-    private Exp finishExp;
+    private float initialExp;
+    private float finishExp;
     private long initialTime;
     private long finishTime;
-    private boolean newSession;
+    private boolean newSession = true;
 
-    public void startSession() {
+    public void startSession(float initialExp) {
         this.initialTime = System.currentTimeMillis();
+        this.initialExp = initialExp;
+        this.newSession = false;
     }
 
     public void endSession() {
@@ -34,15 +36,15 @@ public class Session {
         return finishLevel;
     }
 
-    public Exp getInitialExp() {
+    public float getInitialExp() {
         return initialExp;
     }
 
-    public void setInitialExp(Exp initialExp) {
+    public void setInitialExp(float initialExp) {
         this.initialExp = initialExp;
     }
 
-    public Exp getFinishExp() {
+    public float getFinishExp() {
         return finishExp;
     }
 
