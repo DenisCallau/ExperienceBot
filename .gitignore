@@ -11,4 +11,5 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 *.iml
 .idea
-/src/main/resources/
+/src/main/resources/binarizedImage.png
+/src/main/resources/image.png
