@@ -13,15 +13,13 @@ import java.io.IOException;
 public class Screenshot {
 
     public float getCurrentExp(LevelExpLocations screenLocation) throws IOException, AWTException {
-        return 23.54f;
-        //return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.expX, screenLocation.expY,
-        // screenLocation.expWidth, screenLocation.expHeight)));
+        return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.expX, screenLocation.expY,
+                screenLocation.expWidth, screenLocation.expHeight)));
     }
 
     public int getCurrentLevel(LevelExpLocations screenLocation) throws IOException, AWTException {
-        return 44;
-        //return Integer.parseInt(this.takeScreenshot(new Rectangle(screenLocation.levelX, screenLocation.levelY,
-        // screenLocation.levelWidth, screenLocation.levelHeight)));
+        return Integer.parseInt(this.takeScreenshot(new Rectangle(screenLocation.levelX, screenLocation.levelY,
+                screenLocation.levelWidth, screenLocation.levelHeight)));
     }
 
     private String takeScreenshot(Rectangle area) throws IOException, AWTException {
@@ -84,7 +82,6 @@ public class Screenshot {
         }
 
     }
-
 
 
 }
