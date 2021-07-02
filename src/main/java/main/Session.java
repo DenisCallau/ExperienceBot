@@ -10,14 +10,17 @@ public class Session {
     private long finishTime;
     private boolean newSession = true;
 
-    public void startSession(float initialExp) {
+    public void startSession(int initialLevel, float initialExp) {
         this.initialTime = System.currentTimeMillis();
+        this.initialLevel = initialLevel;
         this.initialExp = initialExp;
         this.newSession = false;
     }
 
-    public void endSession() {
+    public void endSession(int finishLevel, float finishExp) {
         this.finishTime = System.currentTimeMillis();
+        this.finishLevel = finishLevel;
+        this.finishExp = finishExp;
     }
 
     public boolean isNewSession() {

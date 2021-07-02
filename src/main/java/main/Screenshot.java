@@ -1,6 +1,6 @@
 package main;
 
-import main.helpers.ExpLocations;
+import main.helpers.LevelExpLocations;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
@@ -12,16 +12,26 @@ import java.io.IOException;
 
 public class Screenshot {
 
-    public float getCurrentExp(ExpLocations screenLocation) throws IOException, AWTException {
-        return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.x, screenLocation.y, screenLocation.width, screenLocation.height)));
+    public float getCurrentExp(LevelExpLocations screenLocation) throws IOException, AWTException {
+        return 23.54f;
+        //return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.expX, screenLocation.expY,
+        // screenLocation.expWidth, screenLocation.expHeight)));
+    }
+
+    public int getCurrentLevel(LevelExpLocations screenLocation) throws IOException, AWTException {
+        return 44;
+        //return Integer.parseInt(this.takeScreenshot(new Rectangle(screenLocation.levelX, screenLocation.levelY,
+        // screenLocation.levelWidth, screenLocation.levelHeight)));
     }
 
     private String takeScreenshot(Rectangle area) throws IOException, AWTException {
         BufferedImage image = new Robot().createScreenCapture(new Rectangle(area));
 
-        Image nova = image.getScaledInstance((int) area.getWidth() * 1, (int) area.getHeight() * 1, Image.SCALE_DEFAULT);
+        Image nova = image.getScaledInstance((int) area.getWidth() * 1, (int) area.getHeight() * 1,
+                Image.SCALE_DEFAULT);
 
-        BufferedImage bimage = new BufferedImage((int) area.getWidth() * 1, (int) area.getHeight() * 1, BufferedImage.TYPE_INT_RGB);
+        BufferedImage bimage = new BufferedImage((int) area.getWidth() * 1, (int) area.getHeight() * 1,
+                BufferedImage.TYPE_INT_RGB);
         Graphics2D bGr = bimage.createGraphics();
         bGr.drawImage(nova, 0, 0, null);
         bGr.dispose();

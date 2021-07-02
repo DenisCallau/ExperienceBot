@@ -1,11 +1,13 @@
 package main.bot;
 
-import main.*;
-import main.helpers.ExpConfigurator;
-import main.helpers.ExpLocations;
+import main.Calculator;
+import main.Hunt;
+import main.Screenshot;
+import main.Session;
+import main.helpers.Game;
 import main.helpers.JnaHelper;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.awt.*;
 import java.io.IOException;
@@ -15,11 +17,13 @@ public class Bot {
 
     private final JnaHelper jnaHelper = new JnaHelper();
 
-    protected String gameWindowName;
-    protected ExpLocations screenLocation;
+    private static final Logger log = LogManager.getLogger(Bot.class);
+
+    protected Game game;
     protected Calculator calculator;
     protected DecimalFormat df = new DecimalFormat("0");
     protected Screenshot screenshot = new Screenshot();
+    protected int currentLevel;
     protected float currentExp;
     protected float expPerHour;
     protected float timeToNextLevel;
@@ -27,27 +31,25 @@ public class Bot {
     protected Session session;
     protected Hunt hunt;
 
-    final Logger log = LogManager.getLogger(this.getClass());
-
-    public Bot(ExpLocations screenLocation) {
-        //TODO: Pass the game as parameter instead of ExpLocations.
-        this.screenLocation = screenLocation;
+    public Bot(Game game) {
+        this.game = game;
         calculator = new Calculator();
         session = new Session();
         hunt = new Hunt();
     }
 
     public void runBot() throws IOException, AWTException {
-        currentExp = screenshot.getCurrentExp(screenLocation);
+        currentExp = screenshot.getCurrentExp(game.levelExpLocations);
+        currentLevel = screenshot.getCurrentLevel(game.levelExpLocations);
 
         if (session.isNewSession()) {
             log.debug("Starting session");
-            session.startSession(currentExp);
+            session.startSession(currentLevel, currentExp);
         }
 
         if (!hunt.isHunting() && hunt.getLastExpGainedTime() < 12000) {
             log.debug("Starting hunt");
-            hunt.startHunt(currentExp);
+            hunt.startHunt(currentLevel, currentExp);
         }
 
         if (currentExp != hunt.getPreviousExp()) {
@@ -55,7 +57,7 @@ public class Bot {
         }
 
         expPerHour = calculator.expPerHour(hunt, currentExp);
-        timeToNextLevel = calculator.timeToNextLevel(currentExp, expPerHour);
+        timeToNextLevel = calculator.timeToNextLevel(currentExp, expPerHour, currentLevel, game);
 
         if (timeToNextLevel < 1) {
             setTimeToNextLevelString(df.format(timeToNextLevel * 60) + " minutes");
@@ -67,12 +69,16 @@ public class Bot {
 
         if (hunt.isHunting() && (System.currentTimeMillis() - hunt.getLastExpGainedTime()) > 120000) {
             log.debug("Ending hunt");
-            hunt.endHunt(currentExp);
+            hunt.endHunt(currentLevel, currentExp);
         }
     }
 
     public boolean isGameActive() {
-        return jnaHelper.getWindowName().contains(gameWindowName);
+        return jnaHelper.getWindowName().contains(game.windowName);
+    }
+
+    public int getCurrentLevel() {
+        return currentLevel;
     }
 
     public float getCurrentExp() {
@@ -94,5 +100,6 @@ public class Bot {
     public Hunt getHunt() {
         return hunt;
     }
+
 
 }

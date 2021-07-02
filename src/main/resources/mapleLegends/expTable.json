@@ -1,1002 +1,1402 @@
 [
     {
-        "level": 1,
+      "level": 1,
+      "exp": {
         "expToLevelUp": 15,
         "accumulatedExp": 0
-    },
-    {
-        "level": 2,
-        "expToLevelUp": 34,
-        "accumulatedExp": 15
-    },
-    {
-        "level": 3,
-        "expToLevelUp": 57,
-        "accumulatedExp": 49
-    },
-    {
-        "level": 4,
-        "expToLevelUp": 92,
-        "accumulatedExp": 106
-    },
-    {
-        "level": 5,
-        "expToLevelUp": 135,
-        "accumulatedExp": 198
-    },
-    {
-        "level": 6,
-        "expToLevelUp": 372,
-        "accumulatedExp": 333
-    },
-    {
-        "level": 7,
-        "expToLevelUp": 560,
-        "accumulatedExp": 705
-    },
-    {
-        "level": 8,
-        "expToLevelUp": 840,
-        "accumulatedExp": 1265
-    },
-    {
-        "level": 9,
-        "expToLevelUp": 1242,
-        "accumulatedExp": 2105
-    },
-    {
-        "level": 10,
-        "expToLevelUp": 1716,
-        "accumulatedExp": 3347
-    },
-    {
-        "level": 11,
-        "expToLevelUp": 2360,
-        "accumulatedExp": 5063
-    },
-    {
-        "level": 12,
-        "expToLevelUp": 3216,
-        "accumulatedExp": 7423
-    },
-    {
-        "level": 13,
-        "expToLevelUp": 4200,
-        "accumulatedExp": 10639
-    },
-    {
-        "level": 14,
-        "expToLevelUp": 5460,
-        "accumulatedExp": 14839
-    },
-    {
-        "level": 15,
-        "expToLevelUp": 7050,
-        "accumulatedExp": 20299
-    },
-    {
-        "level": 16,
-        "expToLevelUp": 8840,
-        "accumulatedExp": 27349
-    },
-    {
-        "level": 17,
-        "expToLevelUp": 11040,
-        "accumulatedExp": 36189
-    },
-    {
-        "level": 18,
-        "expToLevelUp": 13716,
-        "accumulatedExp": 47229
-    },
-    {
-        "level": 19,
-        "expToLevelUp": 16680,
-        "accumulatedExp": 60945
-    },
-    {
-        "level": 20,
-        "expToLevelUp": 20216,
-        "accumulatedExp": 77625
-    },
-    {
-        "level": 21,
-        "expToLevelUp": 24402,
-        "accumulatedExp": 97841
-    },
-    {
-        "level": 22,
-        "expToLevelUp": 28980,
-        "accumulatedExp": 122243
-    },
-    {
-        "level": 23,
-        "expToLevelUp": 34320,
-        "accumulatedExp": 151223
-    },
-    {
-        "level": 24,
-        "expToLevelUp": 40512,
-        "accumulatedExp": 185543
-    },
-    {
-        "level": 25,
-        "expToLevelUp": 47216,
-        "accumulatedExp": 226055
-    },
-    {
-        "level": 26,
-        "expToLevelUp": 54900,
-        "accumulatedExp": 273271
-    },
-    {
-        "level": 27,
-        "expToLevelUp": 63666,
-        "accumulatedExp": 328171
-    },
-    {
-        "level": 28,
-        "expToLevelUp": 73080,
-        "accumulatedExp": 391837
-    },
-    {
-        "level": 29,
-        "expToLevelUp": 83720,
-        "accumulatedExp": 464917
-    },
-    {
-        "level": 30,
-        "expToLevelUp": 95700,
-        "accumulatedExp": 548637
-    },
-    {
-        "level": 31,
-        "expToLevelUp": 108480,
-        "accumulatedExp": 644337
-    },
-    {
-        "level": 32,
-        "expToLevelUp": 122760,
-        "accumulatedExp": 752817
-    },
-    {
-        "level": 33,
-        "expToLevelUp": 138666,
-        "accumulatedExp": 875577
-    },
-    {
-        "level": 34,
-        "expToLevelUp": 155540,
-        "accumulatedExp": 1014243
-    },
-    {
-        "level": 35,
-        "expToLevelUp": 174216,
-        "accumulatedExp": 1169783
-    },
-    {
-        "level": 36,
-        "expToLevelUp": 194832,
-        "accumulatedExp": 1343999
-    },
-    {
-        "level": 37,
-        "expToLevelUp": 216600,
-        "accumulatedExp": 1538831
-    },
-    {
-        "level": 38,
-        "expToLevelUp": 240500,
-        "accumulatedExp": 1755431
-    },
-    {
-        "level": 39,
-        "expToLevelUp": 266682,
-        "accumulatedExp": 1995931
-    },
-    {
-        "level": 40,
-        "expToLevelUp": 294216,
-        "accumulatedExp": 2262613
-    },
-    {
-        "level": 41,
-        "expToLevelUp": 324240,
-        "accumulatedExp": 2556829
-    },
-    {
-        "level": 42,
-        "expToLevelUp": 356916,
-        "accumulatedExp": 2881069
-    },
-    {
-        "level": 43,
-        "expToLevelUp": 391160,
-        "accumulatedExp": 3237985
-    },
-    {
-        "level": 44,
-        "expToLevelUp": 428280,
-        "accumulatedExp": 3629145
-    },
-    {
-        "level": 45,
-        "expToLevelUp": 468450,
-        "accumulatedExp": 4057425
-    },
-    {
-        "level": 46,
-        "expToLevelUp": 510420,
-        "accumulatedExp": 4525875
-    },
-    {
-        "level": 47,
-        "expToLevelUp": 555680,
-        "accumulatedExp": 5036295
-    },
-    {
-        "level": 48,
-        "expToLevelUp": 604416,
-        "accumulatedExp": 5591975
-    },
-    {
-        "level": 49,
-        "expToLevelUp": 655200,
-        "accumulatedExp": 6196391
-    },
-    {
-        "level": 50,
-        "expToLevelUp": 709716,
-        "accumulatedExp": 6851591
-    },
-    {
-        "level": 51,
-        "expToLevelUp": 748608,
-        "accumulatedExp": 7561307
-    },
-    {
-        "level": 52,
-        "expToLevelUp": 789631,
-        "accumulatedExp": 8309915
-    },
-    {
-        "level": 53,
-        "expToLevelUp": 832902,
-        "accumulatedExp": 9099546
-    },
-    {
-        "level": 54,
-        "expToLevelUp": 878545,
-        "accumulatedExp": 9932448
-    },
-    {
-        "level": 55,
-        "expToLevelUp": 926689,
-        "accumulatedExp": 10810993
-    },
-    {
-        "level": 56,
-        "expToLevelUp": 977471,
-        "accumulatedExp": 11737682
-    },
-    {
-        "level": 57,
-        "expToLevelUp": 1031036,
-        "accumulatedExp": 12715153
-    },
-    {
-        "level": 58,
-        "expToLevelUp": 1087536,
-        "accumulatedExp": 13746189
-    },
-    {
-        "level": 59,
-        "expToLevelUp": 1147132,
-        "accumulatedExp": 14833725
-    },
-    {
-        "level": 60,
-        "expToLevelUp": 1209994,
-        "accumulatedExp": 15980857
-    },
-    {
-        "level": 61,
-        "expToLevelUp": 1276301,
-        "accumulatedExp": 17190851
-    },
-    {
-        "level": 62,
-        "expToLevelUp": 1346242,
-        "accumulatedExp": 18467152
-    },
-    {
-        "level": 63,
-        "expToLevelUp": 1420016,
-        "accumulatedExp": 19813394
-    },
-    {
-        "level": 64,
-        "expToLevelUp": 1497832,
-        "accumulatedExp": 21233410
-    },
-    {
-        "level": 65,
-        "expToLevelUp": 1579913,
-        "accumulatedExp": 22731242
-    },
-    {
-        "level": 66,
-        "expToLevelUp": 1666492,
-        "accumulatedExp": 24311155
-    },
-    {
-        "level": 67,
-        "expToLevelUp": 1757815,
-        "accumulatedExp": 25977647
-    },
-    {
-        "level": 68,
-        "expToLevelUp": 1854143,
-        "accumulatedExp": 27735462
-    },
-    {
-        "level": 69,
-        "expToLevelUp": 1955750,
-        "accumulatedExp": 29589605
-    },
-    {
-        "level": 70,
-        "expToLevelUp": 2062925,
-        "accumulatedExp": 31545355
-    },
-    {
-        "level": 71,
-        "expToLevelUp": 2175973,
-        "accumulatedExp": 33608280
-    },
-    {
-        "level": 72,
-        "expToLevelUp": 2295216,
-        "accumulatedExp": 35784253
-    },
-    {
-        "level": 73,
-        "expToLevelUp": 2420993,
-        "accumulatedExp": 38079469
-    },
-    {
-        "level": 74,
-        "expToLevelUp": 2553663,
-        "accumulatedExp": 40500462
-    },
-    {
-        "level": 75,
-        "expToLevelUp": 2693603,
-        "accumulatedExp": 43054125
-    },
-    {
-        "level": 76,
-        "expToLevelUp": 2841212,
-        "accumulatedExp": 45747728
-    },
-    {
-        "level": 77,
-        "expToLevelUp": 2996910,
-        "accumulatedExp": 48588940
-    },
-    {
-        "level": 78,
-        "expToLevelUp": 3161140,
-        "accumulatedExp": 51585850
-    },
-    {
-        "level": 79,
-        "expToLevelUp": 3334370,
-        "accumulatedExp": 54746990
-    },
-    {
-        "level": 80,
-        "expToLevelUp": 3517093,
-        "accumulatedExp": 58081360
-    },
-    {
-        "level": 81,
-        "expToLevelUp": 3709829,
-        "accumulatedExp": 61598453
-    },
-    {
-        "level": 82,
-        "expToLevelUp": 3913127,
-        "accumulatedExp": 65308282
-    },
-    {
-        "level": 83,
-        "expToLevelUp": 4127566,
-        "accumulatedExp": 69221409
-    },
-    {
-        "level": 84,
-        "expToLevelUp": 4353756,
-        "accumulatedExp": 73348975
-    },
-    {
-        "level": 85,
-        "expToLevelUp": 4592341,
-        "accumulatedExp": 77702731
-    },
-    {
-        "level": 86,
-        "expToLevelUp": 4844001,
-        "accumulatedExp": 82295072
-    },
-    {
-        "level": 87,
-        "expToLevelUp": 5109452,
-        "accumulatedExp": 87139073
-    },
-    {
-        "level": 88,
-        "expToLevelUp": 5389449,
-        "accumulatedExp": 92248525
-    },
-    {
-        "level": 89,
-        "expToLevelUp": 5684790,
-        "accumulatedExp": 97637974
-    },
-    {
-        "level": 90,
-        "expToLevelUp": 5996316,
-        "accumulatedExp": 103322764
-    },
-    {
-        "level": 91,
-        "expToLevelUp": 6324914,
-        "accumulatedExp": 109319080
-    },
-    {
-        "level": 92,
-        "expToLevelUp": 6671519,
-        "accumulatedExp": 115643994
-    },
-    {
-        "level": 93,
-        "expToLevelUp": 7037118,
-        "accumulatedExp": 122315513
-    },
-    {
-        "level": 94,
-        "expToLevelUp": 7422752,
-        "accumulatedExp": 129352631
-    },
-    {
-        "level": 95,
-        "expToLevelUp": 7829518,
-        "accumulatedExp": 136775383
-    },
-    {
-        "level": 96,
-        "expToLevelUp": 8258575,
-        "accumulatedExp": 144604901
-    },
-    {
-        "level": 97,
-        "expToLevelUp": 8711144,
-        "accumulatedExp": 152863476
-    },
-    {
-        "level": 98,
-        "expToLevelUp": 9188514,
-        "accumulatedExp": 161574620
-    },
-    {
-        "level": 99,
-        "expToLevelUp": 9692044,
-        "accumulatedExp": 170763134
-    },
-    {
-        "level": 100,
-        "expToLevelUp": 10223168,
-        "accumulatedExp": 180455178
-    },
-    {
-        "level": 101,
-        "expToLevelUp": 10783397,
-        "accumulatedExp": 190678346
-    },
-    {
-        "level": 102,
-        "expToLevelUp": 11374327,
-        "accumulatedExp": 201461743
-    },
-    {
-        "level": 103,
-        "expToLevelUp": 11997640,
-        "accumulatedExp": 212836070
-    },
-    {
-        "level": 104,
-        "expToLevelUp": 12655110,
-        "accumulatedExp": 224833710
-    },
-    {
-        "level": 105,
-        "expToLevelUp": 13348610,
-        "accumulatedExp": 237488820
-    },
-    {
-        "level": 106,
-        "expToLevelUp": 14080113,
-        "accumulatedExp": 250837430
-    },
-    {
-        "level": 107,
-        "expToLevelUp": 14851703,
-        "accumulatedExp": 264917543
-    },
-    {
-        "level": 108,
-        "expToLevelUp": 15665576,
-        "accumulatedExp": 279769246
-    },
-    {
-        "level": 109,
-        "expToLevelUp": 16524049,
-        "accumulatedExp": 295434822
-    },
-    {
-        "level": 110,
-        "expToLevelUp": 17429566,
-        "accumulatedExp": 311958871
-    },
-    {
-        "level": 111,
-        "expToLevelUp": 18384706,
-        "accumulatedExp": 329388437
-    },
-    {
-        "level": 112,
-        "expToLevelUp": 19392187,
-        "accumulatedExp": 347773143
-    },
-    {
-        "level": 113,
-        "expToLevelUp": 20454878,
-        "accumulatedExp": 367165330
-    },
-    {
-        "level": 114,
-        "expToLevelUp": 21575805,
-        "accumulatedExp": 387620208
-    },
-    {
-        "level": 115,
-        "expToLevelUp": 22758159,
-        "accumulatedExp": 409196013
-    },
-    {
-        "level": 116,
-        "expToLevelUp": 24005306,
-        "accumulatedExp": 431954172
-    },
-    {
-        "level": 117,
-        "expToLevelUp": 25320796,
-        "accumulatedExp": 455959478
-    },
-    {
-        "level": 118,
-        "expToLevelUp": 26708375,
-        "accumulatedExp": 481280274
-    },
-    {
-        "level": 119,
-        "expToLevelUp": 28171993,
-        "accumulatedExp": 507988649
-    },
-    {
-        "level": 120,
-        "expToLevelUp": 29715818,
-        "accumulatedExp": 536160642
-    },
-    {
-        "level": 121,
-        "expToLevelUp": 31344244,
-        "accumulatedExp": 565876460
-    },
-    {
-        "level": 122,
-        "expToLevelUp": 33061908,
-        "accumulatedExp": 597220704
-    },
-    {
-        "level": 123,
-        "expToLevelUp": 34873700,
-        "accumulatedExp": 630282612
-    },
-    {
-        "level": 124,
-        "expToLevelUp": 36784778,
-        "accumulatedExp": 665156312
-    },
-    {
-        "level": 125,
-        "expToLevelUp": 38800583,
-        "accumulatedExp": 701941090
-    },
-    {
-        "level": 126,
-        "expToLevelUp": 40926854,
-        "accumulatedExp": 740741673
-    },
-    {
-        "level": 127,
-        "expToLevelUp": 43169645,
-        "accumulatedExp": 781668527
-    },
-    {
-        "level": 128,
-        "expToLevelUp": 45535341,
-        "accumulatedExp": 824838172
-    },
-    {
-        "level": 129,
-        "expToLevelUp": 48030677,
-        "accumulatedExp": 870373513
-    },
-    {
-        "level": 130,
-        "expToLevelUp": 50662758,
-        "accumulatedExp": 918404190
-    },
-    {
-        "level": 131,
-        "expToLevelUp": 53439077,
-        "accumulatedExp": 969066948
-    },
-    {
-        "level": 132,
-        "expToLevelUp": 56367538,
-        "accumulatedExp": 1022506025
-    },
-    {
-        "level": 133,
-        "expToLevelUp": 59456479,
-        "accumulatedExp": 1078873563
-    },
-    {
-        "level": 134,
-        "expToLevelUp": 62714694,
-        "accumulatedExp": 1138330042
-    },
-    {
-        "level": 135,
-        "expToLevelUp": 66151459,
-        "accumulatedExp": 1201044736
-    },
-    {
-        "level": 136,
-        "expToLevelUp": 69776558,
-        "accumulatedExp": 1267196195
-    },
-    {
-        "level": 137,
-        "expToLevelUp": 73600313,
-        "accumulatedExp": 1336972753
-    },
-    {
-        "level": 138,
-        "expToLevelUp": 77633610,
-        "accumulatedExp": 1410573066
-    },
-    {
-        "level": 139,
-        "expToLevelUp": 81887931,
-        "accumulatedExp": 1488206676
-    },
-    {
-        "level": 140,
-        "expToLevelUp": 86375389,
-        "accumulatedExp": 1570094607
-    },
-    {
-        "level": 141,
-        "expToLevelUp": 91108760,
-        "accumulatedExp": 1656469996
-    },
-    {
-        "level": 142,
-        "expToLevelUp": 96101520,
-        "accumulatedExp": 1747578756
-    },
-    {
-        "level": 143,
-        "expToLevelUp": 101367883,
-        "accumulatedExp": 1843680276
-    },
-    {
-        "level": 144,
-        "expToLevelUp": 106922842,
-        "accumulatedExp": 1945048159
-    },
-    {
-        "level": 145,
-        "expToLevelUp": 112782213,
-        "accumulatedExp": 2051971001
-    },
-    {
-        "level": 146,
-        "expToLevelUp": 118962678,
-        "accumulatedExp": 2164753214
-    },
-    {
-        "level": 147,
-        "expToLevelUp": 125481832,
-        "accumulatedExp": 2283715892
-    },
-    {
-        "level": 148,
-        "expToLevelUp": 132358236,
-        "accumulatedExp": 2409197724
-    },
-    {
-        "level": 149,
-        "expToLevelUp": 139611467,
-        "accumulatedExp": 2541555960
-    },
-    {
-        "level": 150,
-        "expToLevelUp": 147262175,
-        "accumulatedExp": 2681167427
-    },
-    {
-        "level": 151,
-        "expToLevelUp": 155332142,
-        "accumulatedExp": 2828429602
-    },
-    {
-        "level": 152,
-        "expToLevelUp": 163844343,
-        "accumulatedExp": 2983761744
-    },
-    {
-        "level": 153,
-        "expToLevelUp": 172823012,
-        "accumulatedExp": 3147606087
-    },
-    {
-        "level": 154,
-        "expToLevelUp": 182293713,
-        "accumulatedExp": 3320429099
-    },
-    {
-        "level": 155,
-        "expToLevelUp": 192283408,
-        "accumulatedExp": 3502722812
-    },
-    {
-        "level": 156,
-        "expToLevelUp": 202820538,
-        "accumulatedExp": 3695006220
-    },
-    {
-        "level": 157,
-        "expToLevelUp": 213935103,
-        "accumulatedExp": 3897826758
-    },
-    {
-        "level": 158,
-        "expToLevelUp": 225658746,
-        "accumulatedExp": 4111761861
-    },
-    {
-        "level": 159,
-        "expToLevelUp": 238024845,
-        "accumulatedExp": 4337420607
-    },
-    {
-        "level": 160,
-        "expToLevelUp": 251068606,
-        "accumulatedExp": 4575445452
-    },
-    {
-        "level": 161,
-        "expToLevelUp": 264827165,
-        "accumulatedExp": 4826514058
-    },
-    {
-        "level": 162,
-        "expToLevelUp": 279339693,
-        "accumulatedExp": 5091341223
-    },
-    {
-        "level": 163,
-        "expToLevelUp": 294647508,
-        "accumulatedExp": 5370680916
-    },
-    {
-        "level": 164,
-        "expToLevelUp": 310794191,
-        "accumulatedExp": 5665328424
-    },
-    {
-        "level": 165,
-        "expToLevelUp": 327825712,
-        "accumulatedExp": 5976122615
-    },
-    {
-        "level": 166,
-        "expToLevelUp": 345790561,
-        "accumulatedExp": 6303948327
-    },
-    {
-        "level": 167,
-        "expToLevelUp": 364739883,
-        "accumulatedExp": 6649738888
-    },
-    {
-        "level": 168,
-        "expToLevelUp": 384727628,
-        "accumulatedExp": 7014478771
-    },
-    {
-        "level": 169,
-        "expToLevelUp": 405810702,
-        "accumulatedExp": 7399206399
-    },
-    {
-        "level": 170,
-        "expToLevelUp": 428049128,
-        "accumulatedExp": 7805017101
-    },
-    {
-        "level": 171,
-        "expToLevelUp": 451506220,
-        "accumulatedExp": 8233066229
-    },
-    {
-        "level": 172,
-        "expToLevelUp": 476248760,
-        "accumulatedExp": 8684572449
-    },
-    {
-        "level": 173,
-        "expToLevelUp": 502347192,
-        "accumulatedExp": 9160821209
-    },
-    {
-        "level": 174,
-        "expToLevelUp": 529875818,
-        "accumulatedExp": 9663168401
-    },
-    {
-        "level": 175,
-        "expToLevelUp": 558913012,
-        "accumulatedExp": 10193044219
-    },
-    {
-        "level": 176,
-        "expToLevelUp": 589541445,
-        "accumulatedExp": 10751957231
-    },
-    {
-        "level": 177,
-        "expToLevelUp": 621848316,
-        "accumulatedExp": 11341498676
-    },
-    {
-        "level": 178,
-        "expToLevelUp": 655925603,
-        "accumulatedExp": 11963346992
-    },
-    {
-        "level": 179,
-        "expToLevelUp": 691870326,
-        "accumulatedExp": 12619272595
-    },
-    {
-        "level": 180,
-        "expToLevelUp": 729784819,
-        "accumulatedExp": 13311142921
-    },
-    {
-        "level": 181,
-        "expToLevelUp": 769777027,
-        "accumulatedExp": 14040927740
-    },
-    {
-        "level": 182,
-        "expToLevelUp": 811960808,
-        "accumulatedExp": 14810704767
-    },
-    {
-        "level": 183,
-        "expToLevelUp": 856456260,
-        "accumulatedExp": 15622665575
-    },
-    {
-        "level": 184,
-        "expToLevelUp": 903390063,
-        "accumulatedExp": 16479121835
-    },
-    {
-        "level": 185,
-        "expToLevelUp": 952895838,
-        "accumulatedExp": 17382511898
-    },
-    {
-        "level": 186,
-        "expToLevelUp": 1005114529,
-        "accumulatedExp": 18335407736
-    },
-    {
-        "level": 187,
-        "expToLevelUp": 1060194805,
-        "accumulatedExp": 19340522265
-    },
-    {
-        "level": 188,
-        "expToLevelUp": 1118293480,
-        "accumulatedExp": 20400717070
-    },
-    {
-        "level": 189,
-        "expToLevelUp": 1179575962,
-        "accumulatedExp": 21519010550
-    },
-    {
-        "level": 190,
-        "expToLevelUp": 1244216724,
-        "accumulatedExp": 22698586512
-    },
-    {
-        "level": 191,
-        "expToLevelUp": 1312399800,
-        "accumulatedExp": 23942803236
-    },
-    {
-        "level": 192,
-        "expToLevelUp": 1384319309,
-        "accumulatedExp": 25255203036
-    },
-    {
-        "level": 193,
-        "expToLevelUp": 1460180007,
-        "accumulatedExp": 26639522345
-    },
-    {
-        "level": 194,
-        "expToLevelUp": 1540197871,
-        "accumulatedExp": 28099702352
-    },
-    {
-        "level": 195,
-        "expToLevelUp": 1624600714,
-        "accumulatedExp": 29639900223
-    },
-    {
-        "level": 196,
-        "expToLevelUp": 1713628833,
-        "accumulatedExp": 31264500937
-    },
-    {
-        "level": 197,
-        "expToLevelUp": 1807535693,
-        "accumulatedExp": 32978129770
-    },
-    {
-        "level": 198,
-        "expToLevelUp": 1906588648,
-        "accumulatedExp": 34785665463
-    },
-    {
-        "level": 199,
-        "expToLevelUp": 2011069705,
-        "accumulatedExp": 36692254111
-    },
-    {
-        "level": 200,
-        "expToLevelUp": 2121276324,
-        "accumulatedExp": 38703323816
+      }
+    },
+  {
+    "level": 2,
+    "exp": {
+      "expToLevelUp": 34,
+      "accumulatedExp": 15
     }
+  },
+  {
+    "level": 3,
+    "exp": {
+      "expToLevelUp": 57,
+      "accumulatedExp": 49
+    }
+  },
+  {
+    "level": 4,
+    "exp": {
+      "expToLevelUp": 92,
+      "accumulatedExp": 106
+    }
+  },
+  {
+    "level": 5,
+    "exp": {
+      "expToLevelUp": 135,
+      "accumulatedExp": 198
+    }
+  },
+  {
+    "level": 6,
+    "exp": {
+      "expToLevelUp": 372,
+      "accumulatedExp": 333
+    }
+  },
+  {
+    "level": 7,
+    "exp": {
+      "expToLevelUp": 560,
+      "accumulatedExp": 705
+    }
+  },
+  {
+    "level": 8,
+    "exp": {
+      "expToLevelUp": 840,
+      "accumulatedExp": 1265
+    }
+  },
+  {
+    "level": 9,
+    "exp": {
+      "expToLevelUp": 1242,
+      "accumulatedExp": 2105
+    }
+  },
+  {
+    "level": 10,
+    "exp": {
+      "expToLevelUp": 1716,
+      "accumulatedExp": 3347
+    }
+  },
+  {
+    "level": 11,
+    "exp": {
+      "expToLevelUp": 2360,
+      "accumulatedExp": 5063
+    }
+  },
+  {
+    "level": 12,
+    "exp": {
+      "expToLevelUp": 3216,
+      "accumulatedExp": 7423
+    }
+  },
+  {
+    "level": 13,
+    "exp": {
+      "expToLevelUp": 4200,
+      "accumulatedExp": 10639
+    }
+  },
+  {
+    "level": 14,
+    "exp": {
+      "expToLevelUp": 5460,
+      "accumulatedExp": 14839
+    }
+  },
+  {
+    "level": 15,
+    "exp": {
+      "expToLevelUp": 7050,
+      "accumulatedExp": 20299
+    }
+  },
+  {
+    "level": 16,
+    "exp": {
+      "expToLevelUp": 8840,
+      "accumulatedExp": 27349
+    }
+  },
+  {
+    "level": 17,
+    "exp": {
+      "expToLevelUp": 11040,
+      "accumulatedExp": 36189
+    }
+  },
+  {
+    "level": 18,
+    "exp": {
+      "expToLevelUp": 13716,
+      "accumulatedExp": 47229
+    }
+  },
+  {
+    "level": 19,
+    "exp": {
+      "expToLevelUp": 16680,
+      "accumulatedExp": 60945
+    }
+  },
+  {
+    "level": 20,
+    "exp": {
+      "expToLevelUp": 20216,
+      "accumulatedExp": 77625
+    }
+  },
+  {
+    "level": 21,
+    "exp": {
+      "expToLevelUp": 24402,
+      "accumulatedExp": 97841
+    }
+  },
+  {
+    "level": 22,
+    "exp": {
+      "expToLevelUp": 28980,
+      "accumulatedExp": 122243
+    }
+  },
+  {
+    "level": 23,
+    "exp": {
+      "expToLevelUp": 34320,
+      "accumulatedExp": 151223
+    }
+  },
+  {
+    "level": 24,
+    "exp": {
+      "expToLevelUp": 40512,
+      "accumulatedExp": 185543
+    }
+  },
+  {
+    "level": 25,
+    "exp": {
+      "expToLevelUp": 47216,
+      "accumulatedExp": 226055
+    }
+  },
+  {
+    "level": 26,
+    "exp": {
+      "expToLevelUp": 54900,
+      "accumulatedExp": 273271
+    }
+  },
+  {
+    "level": 27,
+    "exp": {
+      "expToLevelUp": 63666,
+      "accumulatedExp": 328171
+    }
+  },
+  {
+    "level": 28,
+    "exp": {
+      "expToLevelUp": 73080,
+      "accumulatedExp": 391837
+    }
+  },
+  {
+    "level": 29,
+    "exp": {
+      "expToLevelUp": 83720,
+      "accumulatedExp": 464917
+    }
+  },
+  {
+    "level": 30,
+    "exp": {
+      "expToLevelUp": 95700,
+      "accumulatedExp": 548637
+    }
+  },
+  {
+    "level": 31,
+    "exp": {
+      "expToLevelUp": 108480,
+      "accumulatedExp": 644337
+    }
+  },
+  {
+    "level": 32,
+    "exp": {
+      "expToLevelUp": 122760,
+      "accumulatedExp": 752817
+    }
+  },
+  {
+    "level": 33,
+    "exp": {
+      "expToLevelUp": 138666,
+      "accumulatedExp": 875577
+    }
+  },
+  {
+    "level": 34,
+    "exp": {
+      "expToLevelUp": 155540,
+      "accumulatedExp": 1014243
+    }
+  },
+  {
+    "level": 35,
+    "exp": {
+      "expToLevelUp": 174216,
+      "accumulatedExp": 1169783
+    }
+  },
+  {
+    "level": 36,
+    "exp": {
+      "expToLevelUp": 194832,
+      "accumulatedExp": 1343999
+    }
+  },
+  {
+    "level": 37,
+    "exp": {
+      "expToLevelUp": 216600,
+      "accumulatedExp": 1538831
+    }
+  },
+  {
+    "level": 38,
+    "exp": {
+      "expToLevelUp": 240500,
+      "accumulatedExp": 1755431
+    }
+  },
+  {
+    "level": 39,
+    "exp": {
+      "expToLevelUp": 266682,
+      "accumulatedExp": 1995931
+    }
+  },
+  {
+    "level": 40,
+    "exp": {
+      "expToLevelUp": 294216,
+      "accumulatedExp": 2262613
+    }
+  },
+  {
+    "level": 41,
+    "exp": {
+      "expToLevelUp": 324240,
+      "accumulatedExp": 2556829
+    }
+  },
+  {
+    "level": 42,
+    "exp": {
+      "expToLevelUp": 356916,
+      "accumulatedExp": 2881069
+    }
+  },
+  {
+    "level": 43,
+    "exp": {
+      "expToLevelUp": 391160,
+      "accumulatedExp": 3237985
+    }
+  },
+  {
+    "level": 44,
+    "exp": {
+      "expToLevelUp": 428280,
+      "accumulatedExp": 3629145
+    }
+  },
+  {
+    "level": 45,
+    "exp": {
+      "expToLevelUp": 468450,
+      "accumulatedExp": 4057425
+    }
+  },
+  {
+    "level": 46,
+    "exp": {
+      "expToLevelUp": 510420,
+      "accumulatedExp": 4525875
+    }
+  },
+  {
+    "level": 47,
+    "exp": {
+      "expToLevelUp": 555680,
+      "accumulatedExp": 5036295
+    }
+  },
+  {
+    "level": 48,
+    "exp": {
+      "expToLevelUp": 604416,
+      "accumulatedExp": 5591975
+    }
+  },
+  {
+    "level": 49,
+    "exp": {
+      "expToLevelUp": 655200,
+      "accumulatedExp": 6196391
+    }
+  },
+  {
+    "level": 50,
+    "exp": {
+      "expToLevelUp": 709716,
+      "accumulatedExp": 6851591
+    }
+  },
+  {
+    "level": 51,
+    "exp": {
+      "expToLevelUp": 748608,
+      "accumulatedExp": 7561307
+    }
+  },
+  {
+    "level": 52,
+    "exp": {
+      "expToLevelUp": 789631,
+      "accumulatedExp": 8309915
+    }
+  },
+  {
+    "level": 53,
+    "exp": {
+      "expToLevelUp": 832902,
+      "accumulatedExp": 9099546
+    }
+  },
+  {
+    "level": 54,
+    "exp": {
+      "expToLevelUp": 878545,
+      "accumulatedExp": 9932448
+    }
+  },
+  {
+    "level": 55,
+    "exp": {
+      "expToLevelUp": 926689,
+      "accumulatedExp": 10810993
+    }
+  },
+  {
+    "level": 56,
+    "exp": {
+      "expToLevelUp": 977471,
+      "accumulatedExp": 11737682
+    }
+  },
+  {
+    "level": 57,
+    "exp": {
+      "expToLevelUp": 1031036,
+      "accumulatedExp": 12715153
+    }
+  },
+  {
+    "level": 58,
+    "exp": {
+      "expToLevelUp": 1087536,
+      "accumulatedExp": 13746189
+    }
+  },
+  {
+    "level": 59,
+    "exp": {
+      "expToLevelUp": 1147132,
+      "accumulatedExp": 14833725
+    }
+  },
+  {
+    "level": 60,
+    "exp": {
+      "expToLevelUp": 1209994,
+      "accumulatedExp": 15980857
+    }
+  },
+  {
+    "level": 61,
+    "exp": {
+      "expToLevelUp": 1276301,
+      "accumulatedExp": 17190851
+    }
+  },
+  {
+    "level": 62,
+    "exp": {
+      "expToLevelUp": 1346242,
+      "accumulatedExp": 18467152
+    }
+  },
+  {
+    "level": 63,
+    "exp": {
+      "expToLevelUp": 1420016,
+      "accumulatedExp": 19813394
+    }
+  },
+  {
+    "level": 64,
+    "exp": {
+      "expToLevelUp": 1497832,
+      "accumulatedExp": 21233410
+    }
+  },
+  {
+    "level": 65,
+    "exp": {
+      "expToLevelUp": 1579913,
+      "accumulatedExp": 22731242
+    }
+  },
+  {
+    "level": 66,
+    "exp": {
+      "expToLevelUp": 1666492,
+      "accumulatedExp": 24311155
+    }
+  },
+  {
+    "level": 67,
+    "exp": {
+      "expToLevelUp": 1757815,
+      "accumulatedExp": 25977647
+    }
+  },
+  {
+    "level": 68,
+    "exp": {
+      "expToLevelUp": 1854143,
+      "accumulatedExp": 27735462
+    }
+  },
+  {
+    "level": 69,
+    "exp": {
+      "expToLevelUp": 1955750,
+      "accumulatedExp": 29589605
+    }
+  },
+  {
+    "level": 70,
+    "exp": {
+      "expToLevelUp": 2062925,
+      "accumulatedExp": 31545355
+    }
+  },
+  {
+    "level": 71,
+    "exp": {
+      "expToLevelUp": 2175973,
+      "accumulatedExp": 33608280
+    }
+  },
+  {
+    "level": 72,
+    "exp": {
+      "expToLevelUp": 2295216,
+      "accumulatedExp": 35784253
+    }
+  },
+  {
+    "level": 73,
+    "exp": {
+      "expToLevelUp": 2420993,
+      "accumulatedExp": 38079469
+    }
+  },
+  {
+    "level": 74,
+    "exp": {
+      "expToLevelUp": 2553663,
+      "accumulatedExp": 40500462
+    }
+  },
+  {
+    "level": 75,
+    "exp": {
+      "expToLevelUp": 2693603,
+      "accumulatedExp": 43054125
+    }
+  },
+  {
+    "level": 76,
+    "exp": {
+      "expToLevelUp": 2841212,
+      "accumulatedExp": 45747728
+    }
+  },
+  {
+    "level": 77,
+    "exp": {
+      "expToLevelUp": 2996910,
+      "accumulatedExp": 48588940
+    }
+  },
+  {
+    "level": 78,
+    "exp": {
+      "expToLevelUp": 3161140,
+      "accumulatedExp": 51585850
+    }
+  },
+  {
+    "level": 79,
+    "exp": {
+      "expToLevelUp": 3334370,
+      "accumulatedExp": 54746990
+    }
+  },
+  {
+    "level": 80,
+    "exp": {
+      "expToLevelUp": 3517093,
+      "accumulatedExp": 58081360
+    }
+  },
+  {
+    "level": 81,
+    "exp": {
+      "expToLevelUp": 3709829,
+      "accumulatedExp": 61598453
+    }
+  },
+  {
+    "level": 82,
+    "exp": {
+      "expToLevelUp": 3913127,
+      "accumulatedExp": 65308282
+    }
+  },
+  {
+    "level": 83,
+    "exp": {
+      "expToLevelUp": 4127566,
+      "accumulatedExp": 69221409
+    }
+  },
+  {
+    "level": 84,
+    "exp": {
+      "expToLevelUp": 4353756,
+      "accumulatedExp": 73348975
+    }
+  },
+  {
+    "level": 85,
+    "exp": {
+      "expToLevelUp": 4592341,
+      "accumulatedExp": 77702731
+    }
+  },
+  {
+    "level": 86,
+    "exp": {
+      "expToLevelUp": 4844001,
+      "accumulatedExp": 82295072
+    }
+  },
+  {
+    "level": 87,
+    "exp": {
+      "expToLevelUp": 5109452,
+      "accumulatedExp": 87139073
+    }
+  },
+  {
+    "level": 88,
+    "exp": {
+      "expToLevelUp": 5389449,
+      "accumulatedExp": 92248525
+    }
+  },
+  {
+    "level": 89,
+    "exp": {
+      "expToLevelUp": 5684790,
+      "accumulatedExp": 97637974
+    }
+  },
+  {
+    "level": 90,
+    "exp": {
+      "expToLevelUp": 5996316,
+      "accumulatedExp": 103322764
+    }
+  },
+  {
+    "level": 91,
+    "exp": {
+      "expToLevelUp": 6324914,
+      "accumulatedExp": 109319080
+    }
+  },
+  {
+    "level": 92,
+    "exp": {
+      "expToLevelUp": 6671519,
+      "accumulatedExp": 115643994
+    }
+  },
+  {
+    "level": 93,
+    "exp": {
+      "expToLevelUp": 7037118,
+      "accumulatedExp": 122315513
+    }
+  },
+  {
+    "level": 94,
+    "exp": {
+      "expToLevelUp": 7422752,
+      "accumulatedExp": 129352631
+    }
+  },
+  {
+    "level": 95,
+    "exp": {
+      "expToLevelUp": 7829518,
+      "accumulatedExp": 136775383
+    }
+  },
+  {
+    "level": 96,
+    "exp": {
+      "expToLevelUp": 8258575,
+      "accumulatedExp": 144604901
+    }
+  },
+  {
+    "level": 97,
+    "exp": {
+      "expToLevelUp": 8711144,
+      "accumulatedExp": 152863476
+    }
+  },
+  {
+    "level": 98,
+    "exp": {
+      "expToLevelUp": 9188514,
+      "accumulatedExp": 161574620
+    }
+  },
+  {
+    "level": 99,
+    "exp": {
+      "expToLevelUp": 9692044,
+      "accumulatedExp": 170763134
+    }
+  },
+  {
+    "level": 100,
+    "exp": {
+      "expToLevelUp": 10223168,
+      "accumulatedExp": 180455178
+    }
+  },
+  {
+    "level": 101,
+    "exp": {
+      "expToLevelUp": 10783397,
+      "accumulatedExp": 190678346
+    }
+  },
+  {
+    "level": 102,
+    "exp": {
+      "expToLevelUp": 11374327,
+      "accumulatedExp": 201461743
+    }
+  },
+  {
+    "level": 103,
+    "exp": {
+      "expToLevelUp": 11997640,
+      "accumulatedExp": 212836070
+    }
+  },
+  {
+    "level": 104,
+    "exp": {
+      "expToLevelUp": 12655110,
+      "accumulatedExp": 224833710
+    }
+  },
+  {
+    "level": 105,
+    "exp": {
+      "expToLevelUp": 13348610,
+      "accumulatedExp": 237488820
+    }
+  },
+  {
+    "level": 106,
+    "exp": {
+      "expToLevelUp": 14080113,
+      "accumulatedExp": 250837430
+    }
+  },
+  {
+    "level": 107,
+    "exp": {
+      "expToLevelUp": 14851703,
+      "accumulatedExp": 264917543
+    }
+  },
+  {
+    "level": 108,
+    "exp": {
+      "expToLevelUp": 15665576,
+      "accumulatedExp": 279769246
+    }
+  },
+  {
+    "level": 109,
+    "exp": {
+      "expToLevelUp": 16524049,
+      "accumulatedExp": 295434822
+    }
+  },
+  {
+    "level": 110,
+    "exp": {
+      "expToLevelUp": 17429566,
+      "accumulatedExp": 311958871
+    }
+  },
+  {
+    "level": 111,
+    "exp": {
+      "expToLevelUp": 18384706,
+      "accumulatedExp": 329388437
+    }
+  },
+  {
+    "level": 112,
+    "exp": {
+      "expToLevelUp": 19392187,
+      "accumulatedExp": 347773143
+    }
+  },
+  {
+    "level": 113,
+    "exp": {
+      "expToLevelUp": 20454878,
+      "accumulatedExp": 367165330
+    }
+  },
+  {
+    "level": 114,
+    "exp": {
+      "expToLevelUp": 21575805,
+      "accumulatedExp": 387620208
+    }
+  },
+  {
+    "level": 115,
+    "exp": {
+      "expToLevelUp": 22758159,
+      "accumulatedExp": 409196013
+    }
+  },
+  {
+    "level": 116,
+    "exp": {
+      "expToLevelUp": 24005306,
+      "accumulatedExp": 431954172
+    }
+  },
+  {
+    "level": 117,
+    "exp": {
+      "expToLevelUp": 25320796,
+      "accumulatedExp": 455959478
+    }
+  },
+  {
+    "level": 118,
+    "exp": {
+      "expToLevelUp": 26708375,
+      "accumulatedExp": 481280274
+    }
+  },
+  {
+    "level": 119,
+    "exp": {
+      "expToLevelUp": 28171993,
+      "accumulatedExp": 507988649
+    }
+  },
+  {
+    "level": 120,
+    "exp": {
+      "expToLevelUp": 29715818,
+      "accumulatedExp": 536160642
+    }
+  },
+  {
+    "level": 121,
+    "exp": {
+      "expToLevelUp": 31344244,
+      "accumulatedExp": 565876460
+    }
+  },
+  {
+    "level": 122,
+    "exp": {
+      "expToLevelUp": 33061908,
+      "accumulatedExp": 597220704
+    }
+  },
+  {
+    "level": 123,
+    "exp": {
+      "expToLevelUp": 34873700,
+      "accumulatedExp": 630282612
+    }
+  },
+  {
+    "level": 124,
+    "exp": {
+      "expToLevelUp": 36784778,
+      "accumulatedExp": 665156312
+    }
+  },
+  {
+    "level": 125,
+    "exp": {
+      "expToLevelUp": 38800583,
+      "accumulatedExp": 701941090
+    }
+  },
+  {
+    "level": 126,
+    "exp": {
+      "expToLevelUp": 40926854,
+      "accumulatedExp": 740741673
+    }
+  },
+  {
+    "level": 127,
+    "exp": {
+      "expToLevelUp": 43169645,
+      "accumulatedExp": 781668527
+    }
+  },
+  {
+    "level": 128,
+    "exp": {
+      "expToLevelUp": 45535341,
+      "accumulatedExp": 824838172
+    }
+  },
+  {
+    "level": 129,
+    "exp": {
+      "expToLevelUp": 48030677,
+      "accumulatedExp": 870373513
+    }
+  },
+  {
+    "level": 130,
+    "exp": {
+      "expToLevelUp": 50662758,
+      "accumulatedExp": 918404190
+    }
+  },
+  {
+    "level": 131,
+    "exp": {
+      "expToLevelUp": 53439077,
+      "accumulatedExp": 969066948
+    }
+  },
+  {
+    "level": 132,
+    "exp": {
+      "expToLevelUp": 56367538,
+      "accumulatedExp": 1022506025
+    }
+  },
+  {
+    "level": 133,
+    "exp": {
+      "expToLevelUp": 59456479,
+      "accumulatedExp": 1078873563
+    }
+  },
+  {
+    "level": 134,
+    "exp": {
+      "expToLevelUp": 62714694,
+      "accumulatedExp": 1138330042
+    }
+  },
+  {
+    "level": 135,
+    "exp": {
+      "expToLevelUp": 66151459,
+      "accumulatedExp": 1201044736
+    }
+  },
+  {
+    "level": 136,
+    "exp": {
+      "expToLevelUp": 69776558,
+      "accumulatedExp": 1267196195
+    }
+  },
+  {
+    "level": 137,
+    "exp": {
+      "expToLevelUp": 73600313,
+      "accumulatedExp": 1336972753
+    }
+  },
+  {
+    "level": 138,
+    "exp": {
+      "expToLevelUp": 77633610,
+      "accumulatedExp": 1410573066
+    }
+  },
+  {
+    "level": 139,
+    "exp": {
+      "expToLevelUp": 81887931,
+      "accumulatedExp": 1488206676
+    }
+  },
+  {
+    "level": 140,
+    "exp": {
+      "expToLevelUp": 86375389,
+      "accumulatedExp": 1570094607
+    }
+  },
+  {
+    "level": 141,
+    "exp": {
+      "expToLevelUp": 91108760,
+      "accumulatedExp": 1656469996
+    }
+  },
+  {
+    "level": 142,
+    "exp": {
+      "expToLevelUp": 96101520,
+      "accumulatedExp": 1747578756
+    }
+  },
+  {
+    "level": 143,
+    "exp": {
+      "expToLevelUp": 101367883,
+      "accumulatedExp": 1843680276
+    }
+  },
+  {
+    "level": 144,
+    "exp": {
+      "expToLevelUp": 106922842,
+      "accumulatedExp": 1945048159
+    }
+  },
+  {
+    "level": 145,
+    "exp": {
+      "expToLevelUp": 112782213,
+      "accumulatedExp": 2051971001
+    }
+  },
+  {
+    "level": 146,
+    "exp": {
+      "expToLevelUp": 118962678,
+      "accumulatedExp": 2164753214
+    }
+  },
+  {
+    "level": 147,
+    "exp": {
+      "expToLevelUp": 125481832,
+      "accumulatedExp": 2283715892
+    }
+  },
+  {
+    "level": 148,
+    "exp": {
+      "expToLevelUp": 132358236,
+      "accumulatedExp": 2409197724
+    }
+  },
+  {
+    "level": 149,
+    "exp": {
+      "expToLevelUp": 139611467,
+      "accumulatedExp": 2541555960
+    }
+  },
+  {
+    "level": 150,
+    "exp": {
+      "expToLevelUp": 147262175,
+      "accumulatedExp": 2681167427
+    }
+  },
+  {
+    "level": 151,
+    "exp": {
+      "expToLevelUp": 155332142,
+      "accumulatedExp": 2828429602
+    }
+  },
+  {
+    "level": 152,
+    "exp": {
+      "expToLevelUp": 163844343,
+      "accumulatedExp": 2983761744
+    }
+  },
+  {
+    "level": 153,
+    "exp": {
+      "expToLevelUp": 172823012,
+      "accumulatedExp": 3147606087
+    }
+  },
+  {
+    "level": 154,
+    "exp": {
+      "expToLevelUp": 182293713,
+      "accumulatedExp": 3320429099
+    }
+  },
+  {
+    "level": 155,
+    "exp": {
+      "expToLevelUp": 192283408,
+      "accumulatedExp": 3502722812
+    }
+  },
+  {
+    "level": 156,
+    "exp": {
+      "expToLevelUp": 202820538,
+      "accumulatedExp": 3695006220
+    }
+  },
+  {
+    "level": 157,
+    "exp": {
+      "expToLevelUp": 213935103,
+      "accumulatedExp": 3897826758
+    }
+  },
+  {
+    "level": 158,
+    "exp": {
+      "expToLevelUp": 225658746,
+      "accumulatedExp": 4111761861
+    }
+  },
+  {
+    "level": 159,
+    "exp": {
+      "expToLevelUp": 238024845,
+      "accumulatedExp": 4337420607
+    }
+  },
+  {
+    "level": 160,
+    "exp": {
+      "expToLevelUp": 251068606,
+      "accumulatedExp": 4575445452
+    }
+  },
+  {
+    "level": 161,
+    "exp": {
+      "expToLevelUp": 264827165,
+      "accumulatedExp": 4826514058
+    }
+  },
+  {
+    "level": 162,
+    "exp": {
+      "expToLevelUp": 279339693,
+      "accumulatedExp": 5091341223
+    }
+  },
+  {
+    "level": 163,
+    "exp": {
+      "expToLevelUp": 294647508,
+      "accumulatedExp": 5370680916
+    }
+  },
+  {
+    "level": 164,
+    "exp": {
+      "expToLevelUp": 310794191,
+      "accumulatedExp": 5665328424
+    }
+  },
+  {
+    "level": 165,
+    "exp": {
+      "expToLevelUp": 327825712,
+      "accumulatedExp": 5976122615
+    }
+  },
+  {
+    "level": 166,
+    "exp": {
+      "expToLevelUp": 345790561,
+      "accumulatedExp": 6303948327
+    }
+  },
+  {
+    "level": 167,
+    "exp": {
+      "expToLevelUp": 364739883,
+      "accumulatedExp": 6649738888
+    }
+  },
+  {
+    "level": 168,
+    "exp": {
+      "expToLevelUp": 384727628,
+      "accumulatedExp": 7014478771
+    }
+  },
+  {
+    "level": 169,
+    "exp": {
+      "expToLevelUp": 405810702,
+      "accumulatedExp": 7399206399
+    }
+  },
+  {
+    "level": 170,
+    "exp": {
+      "expToLevelUp": 428049128,
+      "accumulatedExp": 7805017101
+    }
+  },
+  {
+    "level": 171,
+    "exp": {
+      "expToLevelUp": 451506220,
+      "accumulatedExp": 8233066229
+    }
+  },
+  {
+    "level": 172,
+    "exp": {
+      "expToLevelUp": 476248760,
+      "accumulatedExp": 8684572449
+    }
+  },
+  {
+    "level": 173,
+    "exp": {
+      "expToLevelUp": 502347192,
+      "accumulatedExp": 9160821209
+    }
+  },
+  {
+    "level": 174,
+    "exp": {
+      "expToLevelUp": 529875818,
+      "accumulatedExp": 9663168401
+    }
+  },
+  {
+    "level": 175,
+    "exp": {
+      "expToLevelUp": 558913012,
+      "accumulatedExp": 10193044219
+    }
+  },
+  {
+    "level": 176,
+    "exp": {
+      "expToLevelUp": 589541445,
+      "accumulatedExp": 10751957231
+    }
+  },
+  {
+    "level": 177,
+    "exp": {
+      "expToLevelUp": 621848316,
+      "accumulatedExp": 11341498676
+    }
+  },
+  {
+    "level": 178,
+    "exp": {
+      "expToLevelUp": 655925603,
+      "accumulatedExp": 11963346992
+    }
+  },
+  {
+    "level": 179,
+    "exp": {
+      "expToLevelUp": 691870326,
+      "accumulatedExp": 12619272595
+    }
+  },
+  {
+    "level": 180,
+    "exp": {
+      "expToLevelUp": 729784819,
+      "accumulatedExp": 13311142921
+    }
+  },
+  {
+    "level": 181,
+    "exp": {
+      "expToLevelUp": 769777027,
+      "accumulatedExp": 14040927740
+    }
+  },
+  {
+    "level": 182,
+    "exp": {
+      "expToLevelUp": 811960808,
+      "accumulatedExp": 14810704767
+    }
+  },
+  {
+    "level": 183,
+    "exp": {
+      "expToLevelUp": 856456260,
+      "accumulatedExp": 15622665575
+    }
+  },
+  {
+    "level": 184,
+    "exp": {
+      "expToLevelUp": 903390063,
+      "accumulatedExp": 16479121835
+    }
+  },
+  {
+    "level": 185,
+    "exp": {
+      "expToLevelUp": 952895838,
+      "accumulatedExp": 17382511898
+    }
+  },
+  {
+    "level": 186,
+    "exp": {
+      "expToLevelUp": 1005114529,
+      "accumulatedExp": 18335407736
+    }
+  },
+  {
+    "level": 187,
+    "exp": {
+      "expToLevelUp": 1060194805,
+      "accumulatedExp": 19340522265
+    }
+  },
+  {
+    "level": 188,
+    "exp": {
+      "expToLevelUp": 1118293480,
+      "accumulatedExp": 20400717070
+    }
+  },
+  {
+    "level": 189,
+    "exp": {
+      "expToLevelUp": 1179575962,
+      "accumulatedExp": 21519010550
+    }
+  },
+  {
+    "level": 190,
+    "exp": {
+      "expToLevelUp": 1244216724,
+      "accumulatedExp": 22698586512
+    }
+  },
+  {
+    "level": 191,
+    "exp": {
+      "expToLevelUp": 1312399800,
+      "accumulatedExp": 23942803236
+    }
+  },
+  {
+    "level": 192,
+    "exp": {
+      "expToLevelUp": 1384319309,
+      "accumulatedExp": 25255203036
+    }
+  },
+  {
+    "level": 193,
+    "exp": {
+      "expToLevelUp": 1460180007,
+      "accumulatedExp": 26639522345
+    }
+  },
+  {
+    "level": 194,
+    "exp": {
+      "expToLevelUp": 1540197871,
+      "accumulatedExp": 28099702352
+    }
+  },
+  {
+    "level": 195,
+    "exp": {
+      "expToLevelUp": 1624600714,
+      "accumulatedExp": 29639900223
+    }
+  },
+  {
+    "level": 196,
+    "exp": {
+      "expToLevelUp": 1713628833,
+      "accumulatedExp": 31264500937
+    }
+  },
+  {
+    "level": 197,
+    "exp": {
+      "expToLevelUp": 1807535693,
+      "accumulatedExp": 32978129770
+    }
+  },
+  {
+    "level": 198,
+    "exp": {
+      "expToLevelUp": 1906588648,
+      "accumulatedExp": 34785665463
+    }
+  },
+  {
+    "level": 199,
+    "exp": {
+      "expToLevelUp": 2011069705,
+      "accumulatedExp": 36692254111
+    }
+  },
+  {
+    "level": 200,
+    "exp": {
+      "expToLevelUp": 2121276324,
+      "accumulatedExp": 38703323816
+    }
+  }
 ]

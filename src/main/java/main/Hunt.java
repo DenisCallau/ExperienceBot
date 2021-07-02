@@ -2,6 +2,8 @@ package main;
 
 public class Hunt {
 
+    private int initialLevel;
+    private int finishLevel;
     private float initialExp;
     private float finishExp;
     private long initialTime;
@@ -11,15 +13,17 @@ public class Hunt {
     private long lastExpGainedTime;
     private long huntingTime;
 
-    public void startHunt(float currentExp) {
+    public void startHunt(int initialLevel, float currentExp) {
         this.initialTime = System.currentTimeMillis();
-        this.lastExpGainedTime = 0;
+        this.initialLevel = initialLevel;
         this.initialExp = currentExp;
+        this.lastExpGainedTime = 0;
         this.hunting = true;
     }
 
-    public void endHunt(float finishExp) {
+    public void endHunt(int finishLevel, float finishExp) {
         this.finishTime = System.currentTimeMillis();
+        this.finishLevel = finishLevel;
         this.finishExp = finishExp;
         this.hunting = false;
     }
