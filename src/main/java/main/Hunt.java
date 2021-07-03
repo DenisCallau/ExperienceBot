@@ -24,10 +24,10 @@ public class Hunt {
         this.hunting = true;
     }
 
-    public void endHunt(int finishLevel, float finishExp) {
+    public void endHunt() {
         this.finishTime = System.currentTimeMillis();
-        this.finishLevel = finishLevel;
-        this.finishExp = finishExp;
+        this.finishLevel = currentLevel;
+        this.finishExp = currentExp;
         this.hunting = false;
     }
 

@@ -48,7 +48,7 @@ public class Bot {
             session.startSession(currentLevel, currentExp);
         }
 
-        if (!hunt.isHunting() && hunt.getLastExpGainedTime() < 12000) {
+        if (!hunt.isHunting()) {
             log.debug("Starting hunt");
             hunt.startHunt(currentLevel, currentExp);
         }

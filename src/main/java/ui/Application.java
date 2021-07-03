@@ -6,7 +6,10 @@ import main.helpers.Game;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class Application implements Runnable {
@@ -20,6 +23,13 @@ public class Application implements Runnable {
         Bot bot = new Bot(Game.BLACK_DESERT);
 
         while (true) {
+
+            if (bot.isGameActive()) {
+                ui.frame.setVisible(true);
+            } else {
+                ui.frame.setVisible(false);
+            }
+
             while (bot.isGameActive()) {
                 try {
                     bot.runBot();
@@ -29,11 +39,14 @@ public class Application implements Runnable {
                 } catch (IOException | AWTException e) {
                     log.error("Couldn't run method runBot()");
                 }
+
+                ui.resetButton.addActionListener(e -> bot.getHunt().endHunt());
+
                 ui.frame.pack();
             }
 
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
