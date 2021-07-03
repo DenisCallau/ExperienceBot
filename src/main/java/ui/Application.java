@@ -17,20 +17,27 @@ public class Application implements Runnable {
 
     @Override
     public void run() {
-        Bot bot = new Bot(Game.MAPLE_LEGENDS);
+        Bot bot = new Bot(Game.BLACK_DESERT);
 
         while (true) {
-            try {
-                bot.runBot();
-                ExpUiLabelBuilder.setLabelText(ui.currentLevelLabel, ui.currentExpLabel, ui.expPerHourLabel,
-                        ui.expGainedLabel,
-                        ui.timeToNextLevelLabel, bot);
-            } catch (IOException | AWTException e) {
-                log.error("Couldn't run method runBot()");
+            while (bot.isGameActive()) {
+                try {
+                    bot.runBot();
+                    ExpUiLabelBuilder.setLabelText(ui.currentLevelLabel, ui.currentExpLabel, ui.expPerHourLabel,
+                            ui.expGainedLabel,
+                            ui.timeToNextLevelLabel, bot);
+                } catch (IOException | AWTException e) {
+                    log.error("Couldn't run method runBot()");
+                }
+                ui.frame.pack();
             }
-            ui.frame.pack();
-        }
 
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 }

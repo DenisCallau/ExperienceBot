@@ -13,11 +13,11 @@ public abstract class ExpUiLabelBuilder {
                                     BotUiLabel expPerHourLabel, BotUiLabel expGainedLabel,
                                     BotUiLabel timeToNextLevelLabel, Bot bot) {
         if (bot.getHunt().isHunting()) {
-            currentLevelLabel.setText(("Current level: " + bot.getCurrentLevel()));
+            currentLevelLabel.setText("Current level: " + bot.getCurrentLevel());
             currentExpLabel.setText(("Current Exp: " + df.format(bot.getCurrentExp())) + "%");
-            expPerHourLabel.setText(("Exp/Hour: " + df.format(bot.getExpPerHour()) + "%"));
-            expGainedLabel.setText(("Exp Gained: " + df.format((bot.getCurrentExp() - bot.getHunt().getInitialExp())) + "%"));
-            timeToNextLevelLabel.setText(("Time to level up: " + bot.getTimeToNextLevelString()));
+            expPerHourLabel.setText("Exp/Hour: " + df.format(bot.getExpPerHour()) + "%");
+            expGainedLabel.setText("Exp Gained: " + df.format(bot.getHunt().getExpGained()) + "%");
+            timeToNextLevelLabel.setText("Time to level up: " + bot.getTimeToNextLevelString());
         } else {
             currentLevelLabel.setText("");
             currentExpLabel.setText("");

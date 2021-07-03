@@ -1,5 +1,8 @@
 package main;
 
+import main.helpers.ExpConfigurator;
+import main.helpers.ExpType;
+import main.helpers.Game;
 import main.helpers.LevelExpLocations;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
@@ -12,14 +15,42 @@ import java.io.IOException;
 
 public class Screenshot {
 
+    private ExpConfigurator expConfigurator;
+    private String method;
+
+    public Screenshot(Game game) {
+        if (game.expType == ExpType.PERCENTAGE) {
+            this.expConfigurator = new ExpConfigurator(game.levelExpLocations.firstIndexExp,
+                    game.levelExpLocations.lastIndexExp, game.levelExpLocations.firstLevelIndex,
+                    game.levelExpLocations.lastLevelIndex);
+        } else {
+            this.expConfigurator = new ExpConfigurator(game.levelExpLocations.firstIndexExp,
+                    game.levelExpLocations.lastIndexExp, game.levelExpLocations.firstLevelIndex,
+                    game.levelExpLocations.lastLevelIndex);
+        }
+    }
+
     public float getCurrentExp(LevelExpLocations screenLocation) throws IOException, AWTException {
-        return Float.parseFloat(this.takeScreenshot(new Rectangle(screenLocation.expX, screenLocation.expY,
-                screenLocation.expWidth, screenLocation.expHeight)));
+        method = "exp";
+        try {
+            return Float.parseFloat(expConfigurator.sanitizeExp(this.takeScreenshot(new Rectangle(screenLocation.expX,
+                    screenLocation.expY,
+                    screenLocation.expWidth, screenLocation.expHeight))));
+        } catch (Exception e) {
+            return 0f;
+        }
     }
 
     public int getCurrentLevel(LevelExpLocations screenLocation) throws IOException, AWTException {
-        return Integer.parseInt(this.takeScreenshot(new Rectangle(screenLocation.levelX, screenLocation.levelY,
-                screenLocation.levelWidth, screenLocation.levelHeight)));
+        method = "level";
+        try {
+            String lvl = expConfigurator.sanitizeLevel(this.takeScreenshot(new Rectangle(screenLocation.levelX, screenLocation.levelY,
+                    screenLocation.levelWidth, screenLocation.levelHeight)));
+            lvl = lvl.replaceAll("[^0-9]", "");
+            return Integer.parseInt(lvl);
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     private String takeScreenshot(Rectangle area) throws IOException, AWTException {
@@ -34,7 +65,12 @@ public class Screenshot {
         bGr.drawImage(nova, 0, 0, null);
         bGr.dispose();
 
-        File file = new File("./src/main/resources/image.png");
+        File file;
+        if(method.equals("exp")) {
+            file = new File("./src/main/resources/expImage.png");
+        } else {
+            file = new File("./src/main/resources/levelImage.png");
+        }
         ImageIO.write(bimage, "png", file);
 
         return this.binarizeImage(bimage);
@@ -61,7 +97,12 @@ public class Screenshot {
             }
         }
 
-        File file = new File("./src/main/resources/binarizedImage.png");
+        File file;
+        if(method.equals("exp")) {
+            file = new File("./src/main/resources/expBinarizedImage.png");
+        } else {
+            file = new File("./src/main/resources/levelBinarizedImage.png");
+        }
         ImageIO.write(binarizedImage, "png", file);
 
         return this.doOcr(file);
@@ -70,12 +111,12 @@ public class Screenshot {
 
     private String doOcr(File file) {
         Tesseract tess4j = new Tesseract();
-        tess4j.setDatapath("C:/Program Files (x86)/Tesseract-OCR/tessdata");
+        tess4j.setDatapath("C:/Program Files/Tesseract-OCR/tessdata");
         tess4j.setLanguage("eng");
         tess4j.setTessVariable("tessedit_char_whitelist", "0123456789[].%");
-
         try {
-            return tess4j.doOCR(file); //Warning: Invalid resolution 0 dpi. Using 70 instead.
+            String value = tess4j.doOCR(file);
+            return value;
         } catch (TesseractException e) {
             System.err.println(e.getMessage());
             return null;

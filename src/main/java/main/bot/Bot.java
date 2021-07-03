@@ -22,8 +22,8 @@ public class Bot {
     protected Game game;
     protected Calculator calculator;
     protected DecimalFormat df = new DecimalFormat("0");
-    protected Screenshot screenshot = new Screenshot();
     protected int currentLevel;
+    protected Screenshot screenshot;
     protected float currentExp;
     protected float expPerHour;
     protected float timeToNextLevel;
@@ -33,6 +33,7 @@ public class Bot {
 
     public Bot(Game game) {
         this.game = game;
+        screenshot = new Screenshot(game);
         calculator = new Calculator();
         session = new Session();
         hunt = new Hunt();
@@ -56,7 +57,11 @@ public class Bot {
             hunt.setLastExpGainedTime(System.currentTimeMillis());
         }
 
+        hunt.setCurrentExp(currentExp);
+        hunt.setCurrentLevel(currentLevel);
+
         expPerHour = calculator.expPerHour(hunt, currentExp);
+
         timeToNextLevel = calculator.timeToNextLevel(currentExp, expPerHour, currentLevel, game);
 
         if (timeToNextLevel < 1) {
@@ -66,11 +71,12 @@ public class Bot {
         }
 
         hunt.setPreviousExp(currentExp);
+        hunt.setPreviousLevel(currentLevel);
 
-        if (hunt.isHunting() && (System.currentTimeMillis() - hunt.getLastExpGainedTime()) > 120000) {
-            log.debug("Ending hunt");
-            hunt.endHunt(currentLevel, currentExp);
-        }
+//        if (hunt.isHunting() && (System.currentTimeMillis() - hunt.getLastExpGainedTime()) > 1200) {
+//            log.debug("Ending hunt");
+//            hunt.endHunt(currentLevel, currentExp);
+//        }
     }
 
     public boolean isGameActive() {

@@ -13,6 +13,7 @@ public enum Game {
     public LevelExpLocations levelExpLocations;
     public String windowName;
     public ExpType expType;
+    public ExpConfigurator expConfigurator;
     public JSONObject expTableJson;
 
     Game(String name, String windowName, LevelExpLocations levelExpLocations, ExpType expType) {

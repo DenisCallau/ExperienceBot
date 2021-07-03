@@ -1,7 +1,5 @@
 package main;
 
-import main.helpers.ExpConfigurator;
-import main.helpers.ExpPercentageConfigurator;
 import main.helpers.ExpType;
 import main.helpers.Game;
 import org.apache.logging.log4j.LogManager;
@@ -16,15 +14,16 @@ public class Calculator {
     protected float hoursDiff;
     private float totalExpToNextLevel;
     private float expToNextLevel;
-    private ExpConfigurator expConfigurator = new ExpPercentageConfigurator(0, "%");
 
     private static final Logger log = LogManager.getLogger(Calculator.class);
 
     public float expPerHour(Hunt hunt, float currentExp) {
-        expPerHour = 0;
         now = System.currentTimeMillis();
 
-        expGained = currentExp - hunt.getInitialExp();
+
+        expGained = (currentExp + ((hunt.getCurrentLevel() - hunt.getInitialLevel()) * 100)) - hunt.getInitialExp();
+        hunt.setExpGained(expGained);
+
         long timeDiff = now - hunt.getInitialTime();
 
         try {
@@ -35,13 +34,13 @@ public class Calculator {
             return expPerHour;
         } catch (ArithmeticException e) {
             log.error("Invalid data for calculations");
-            return expPerHour;
+            return 0;
         }
     }
 
 
     public float timeToNextLevel(float currentExp, float expPerHour, int currentLevel, Game game) {
-        if (expConfigurator.getExpType() == ExpType.PERCENTAGE) {
+        if (game.expType == ExpType.PERCENTAGE) {
             totalExpToNextLevel = 100;
         } else {
             JSONObject levelJson = game.expTableJson.getJSONObject(String.valueOf(currentLevel));
