@@ -1,6 +1,15 @@
 # Experience Bot
 
 This is an application to track the experience gained in a game and calculate the time untill you level up.
+The intention behind developing this application is to provide a way to track the experience gain, once in some games it can be very laborious task, so efficieny is always aimed.
+Also, as this application don't access memory address, so it can't be considered hacking or violating game rules. Just in case, <strong>USE THIS SOFTWARE AT YOUR OWN RISK.</strong>
+I do not take any responsibilities for penalties in your game account.
+
+<h3>The first version is released:</h3>
+https://github.com/DenisCallau/ExperienceBot/releases/download/v0.1/ExperienceBot.jar
+<br><br>
+For now, you <strong>must</strong> install Google Tesseract and it <strong>must</strong> be in "C:/Program Files/" folder with default folder name. Note that can't be "Program Files (x86)".
+<br><br>
 
 It works with image recognition and processing, periodically taking screenshots from the region containing the experience quantity and calculating how much experience is needed to next level.
 
