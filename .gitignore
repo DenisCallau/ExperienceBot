@@ -16,3 +16,8 @@ buildNumber.properties
 /src/main/resources/image.png
 *.log
 out/
+/src/main/resources/expBinarizedImage.png
+/src/main/resources/expImage.png
+/src/main/resources/levelBinarizedImage.png
+/src/main/resources/levelImage.png
+/src/main/resources/META-INF/MANIFEST.MF
