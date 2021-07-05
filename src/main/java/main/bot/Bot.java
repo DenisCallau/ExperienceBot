@@ -34,6 +34,7 @@ public class Bot {
     public Bot(Game game) {
         this.game = game;
         screenshot = new Screenshot(game);
+        screenshot.setTesseractDatapath();
         calculator = new Calculator();
         session = new Session();
         hunt = new Hunt();
