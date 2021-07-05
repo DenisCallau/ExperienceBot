@@ -20,8 +20,35 @@ public class Screenshot {
 
     private ExpConfigurator expConfigurator;
     private String method;
+    private Tesseract tess4j = new Tesseract();
 
     private static final Logger log = LogManager.getLogger(Screenshot.class);
+
+    public void setTesseractDatapath() {
+
+        String dirPath = System.getenv("programfiles") + "/Tesseract-OCR/tessdata";
+        File file = new File(dirPath);
+        String dirPath86 = System.getenv("programfiles(x86)") + "/Tesseract-OCR/tessdata";
+        File file86 = new File(dirPath86);
+
+        if (file86.exists()) {
+            tess4j.setDatapath(dirPath86);
+            log.debug("Tesseract path found in " + System.getenv("programfiles(x86)") + "/Tesseract-OCR/tessdata");
+            tess4j.setLanguage("eng");
+            tess4j.setTessVariable("tessedit_char_whitelist", "0123456789[].%");
+        } else if (file.exists()) {
+            tess4j.setDatapath(dirPath);
+            log.debug("Tesseract path found in " + System.getenv("programfiles") + "/Tesseract-OCR/tessdata");
+            tess4j.setLanguage("eng");
+            tess4j.setTessVariable("tessedit_char_whitelist", "0123456789[].%");
+        } else {
+            log.error("Tesseract Datapath couldn't be found");
+        }
+
+
+    }
+
+
 
     public Screenshot(Game game) {
         if (game.expType == ExpType.PERCENTAGE) {
@@ -70,14 +97,14 @@ public class Screenshot {
         try {
             BufferedImage image = new Robot().createScreenCapture(new Rectangle(area));
 
-            Image nova = image.getScaledInstance((int) area.getWidth() * 1, (int) area.getHeight() * 1,
-                    Image.SCALE_DEFAULT);
+        Image nova = image.getScaledInstance((int) area.getWidth() * 1, (int) area.getHeight() * 1,
+                Image.SCALE_DEFAULT);
 
-            BufferedImage bimage = new BufferedImage((int) area.getWidth() * 1, (int) area.getHeight() * 1,
-                    BufferedImage.TYPE_INT_RGB);
-            Graphics2D bGr = bimage.createGraphics();
-            bGr.drawImage(nova, 0, 0, null);
-            bGr.dispose();
+        BufferedImage bimage = new BufferedImage((int) area.getWidth() * 1, (int) area.getHeight() * 1,
+                BufferedImage.TYPE_INT_RGB);
+        Graphics2D bGr = bimage.createGraphics();
+        bGr.drawImage(nova, 0, 0, null);
+        bGr.dispose();
 
             File file;
             if (method.equals("exp")) {
@@ -134,10 +161,7 @@ public class Screenshot {
 
     private String doOcr(File file) {
         log.debug("Starting OCR");
-        Tesseract tess4j = new Tesseract();
-        tess4j.setDatapath("C:/Program Files/Tesseract-OCR/tessdata");
-        tess4j.setLanguage("eng");
-        tess4j.setTessVariable("tessedit_char_whitelist", "0123456789[].%");
+        setTesseractDatapath();
         try {
             String value = tess4j.doOCR(file);
             return value;

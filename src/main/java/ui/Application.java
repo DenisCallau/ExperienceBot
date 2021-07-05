@@ -10,7 +10,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 import java.io.IOException;
 
 public class Application implements Runnable {
@@ -22,10 +21,9 @@ public class Application implements Runnable {
     @Override
     public void run() {
         Bot bot = new Bot(Game.BLACK_DESERT);
-        log.debug("Application started for " + Game.BLACK_DESERT.name);
+        log.debug("Started application for " + Game.BLACK_DESERT);
 
         while (true) {
-
 
             if (bot.isGameActive()) {
                 ui.frame.setVisible(true);
@@ -34,7 +32,7 @@ public class Application implements Runnable {
             }
 
             while (bot.isGameActive()) {
-                log.info("=========================== Started tick ===========================");
+                log.debug("=========================== Started tick ===========================");
                 try {
                     bot.runBot();
                     ExpUiLabelBuilder.setLabelText(ui.currentLevelLabel, ui.currentExpLabel, ui.expPerHourLabel,
@@ -44,11 +42,15 @@ public class Application implements Runnable {
                     log.error("Couldn't run method runBot()");
                 }
 
-                ui.resetButton.addActionListener(e -> bot.getHunt().endHunt());
-                ui.closeButton.addActionListener(e -> System.exit(0));
+                ui.resetButton.addActionListener(e -> bot.getHunt().endHunt(bot.getCurrentLevel(), bot.getCurrentExp()));
+                ui.closeButton.addActionListener(e -> {
+                    bot.getHunt().endHunt(bot.getCurrentLevel(), bot.getCurrentExp());
+                    bot.getSession().endSession(bot.getCurrentLevel(), bot.getCurrentExp());
+                    System.exit(0);
+                });
 
                 ui.frame.pack();
-                log.info("=========================== Finished tick ===========================");
+                log.debug("=========================== Finished tick ===========================");
             }
 
             try {
@@ -56,9 +58,6 @@ public class Application implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-
-
         }
 
     }

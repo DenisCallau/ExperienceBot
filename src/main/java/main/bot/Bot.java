@@ -105,5 +105,9 @@ public class Bot {
         return hunt;
     }
 
+    public Session getSession() {
+        return session;
+    }
+
 
 }

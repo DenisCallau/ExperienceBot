@@ -22,7 +22,6 @@ public class Hunt {
     private static final Logger log = LogManager.getLogger(Hunt.class);
 
     public void startHunt(int currentLevel, float currentExp) {
-        log.debug("Starting hunt");
         this.initialTime = System.currentTimeMillis();
         this.initialLevel = currentLevel;
         this.initialExp = currentExp;
@@ -30,20 +29,13 @@ public class Hunt {
         this.hunting = true;
     }
 
-    public void endHunt() {
+    public void endHunt(int finishLevel, float finishExp) {
         log.debug("Ending hunt");
-        log.info(this.toString());
         this.finishTime = System.currentTimeMillis();
         this.finishLevel = currentLevel;
         this.finishExp = currentExp;
         this.hunting = false;
     }
-
-    @Override
-    public String toString() {
-        return "\nInitial level   |   Initial Exp   |   Finish level   |   Finish Exp\n" + initialLevel + "   |   " + initialExp + "   |   " + finishLevel + "   |   " + finishExp;
-    }
-
 
     public boolean isHunting() {
         return this.hunting;
