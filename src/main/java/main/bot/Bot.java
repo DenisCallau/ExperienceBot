@@ -44,12 +44,10 @@ public class Bot {
         currentLevel = screenshot.getCurrentLevel(game.levelExpLocations);
 
         if (session.isNewSession()) {
-            log.debug("Starting session");
             session.startSession(currentLevel, currentExp);
         }
 
         if (!hunt.isHunting()) {
-            log.debug("Starting hunt");
             hunt.startHunt(currentLevel, currentExp);
         }
 
@@ -63,12 +61,12 @@ public class Bot {
         expPerHour = calculator.expPerHour(hunt, currentExp);
 
         timeToNextLevel = calculator.timeToNextLevel(currentExp, expPerHour, currentLevel, game);
-
         if (timeToNextLevel < 1) {
             setTimeToNextLevelString(df.format(timeToNextLevel * 60) + " minutes");
         } else {
             setTimeToNextLevelString((int) timeToNextLevel + " hours and " + df.format((timeToNextLevel * 60) % 60) + " minutes");
         }
+        log.debug("Time to next level: " + timeToNextLevelString);
 
         hunt.setPreviousExp(currentExp);
         hunt.setPreviousLevel(currentLevel);

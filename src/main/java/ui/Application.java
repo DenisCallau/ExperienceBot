@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 
 public class Application implements Runnable {
@@ -21,8 +22,10 @@ public class Application implements Runnable {
     @Override
     public void run() {
         Bot bot = new Bot(Game.BLACK_DESERT);
+        log.debug("Application started for " + Game.BLACK_DESERT.name);
 
         while (true) {
+
 
             if (bot.isGameActive()) {
                 ui.frame.setVisible(true);
@@ -31,6 +34,7 @@ public class Application implements Runnable {
             }
 
             while (bot.isGameActive()) {
+                log.info("=========================== Started tick ===========================");
                 try {
                     bot.runBot();
                     ExpUiLabelBuilder.setLabelText(ui.currentLevelLabel, ui.currentExpLabel, ui.expPerHourLabel,
@@ -41,8 +45,10 @@ public class Application implements Runnable {
                 }
 
                 ui.resetButton.addActionListener(e -> bot.getHunt().endHunt());
+                ui.closeButton.addActionListener(e -> System.exit(0));
 
                 ui.frame.pack();
+                log.info("=========================== Finished tick ===========================");
             }
 
             try {
@@ -50,6 +56,9 @@ public class Application implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+
+
         }
 
     }

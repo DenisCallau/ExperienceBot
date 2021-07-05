@@ -1,5 +1,8 @@
 package main;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Hunt {
 
     private int initialLevel;
@@ -16,7 +19,10 @@ public class Hunt {
     private long lastExpGainedTime;
     private float expGained;
 
+    private static final Logger log = LogManager.getLogger(Hunt.class);
+
     public void startHunt(int currentLevel, float currentExp) {
+        log.debug("Starting hunt");
         this.initialTime = System.currentTimeMillis();
         this.initialLevel = currentLevel;
         this.initialExp = currentExp;
@@ -25,11 +31,19 @@ public class Hunt {
     }
 
     public void endHunt() {
+        log.debug("Ending hunt");
+        log.info(this.toString());
         this.finishTime = System.currentTimeMillis();
         this.finishLevel = currentLevel;
         this.finishExp = currentExp;
         this.hunting = false;
     }
+
+    @Override
+    public String toString() {
+        return "\nInitial level   |   Initial Exp   |   Finish level   |   Finish Exp\n" + initialLevel + "   |   " + initialExp + "   |   " + finishLevel + "   |   " + finishExp;
+    }
+
 
     public boolean isHunting() {
         return this.hunting;

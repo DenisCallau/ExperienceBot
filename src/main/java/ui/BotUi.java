@@ -10,6 +10,7 @@ public class BotUi {
     protected BotUiFrame frame = new BotUiFrame();
     private BotUiPanel panel = new BotUiPanel();
     protected JButton resetButton = new JButton();
+    protected JButton closeButton = new JButton();
     protected BotUiLabel currentLevelLabel = new BotUiLabel();
     protected BotUiLabel currentExpLabel = new BotUiLabel();
     protected BotUiLabel expPerHourLabel = new BotUiLabel();
@@ -40,18 +41,19 @@ public class BotUi {
         c.gridy = 5;
         panel.add(resetButton, c);
 
+        closeButton.setFocusable(false);
+        closeButton.setBackground(new Color(78, 29, 29));
+        closeButton.setForeground(new Color(222, 222, 222));
+        closeButton.setText("Close");
+        c.gridy = 6;
+        panel.add(closeButton, c);
+
+
         frame.add(panel);
 
         frame.pack();
 
-        frame.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_CAPS_LOCK) {
-                    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                }
-            }
-        });
+
 
     }
 

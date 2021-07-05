@@ -1,12 +1,16 @@
 package main.helpers;
 
+import main.Calculator;
 import main.bot.Bot;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ui.BotUiLabel;
 
 import java.text.DecimalFormat;
 
 public abstract class ExpUiLabelBuilder {
 
+    private static final Logger log = LogManager.getLogger(ExpUiLabelBuilder.class);
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void setLabelText(BotUiLabel currentLevelLabel, BotUiLabel currentExpLabel,
@@ -25,6 +29,9 @@ public abstract class ExpUiLabelBuilder {
             expGainedLabel.setText("");
             timeToNextLevelLabel.setText("");
         }
+
+        log.debug("Updated labels");
+
     }
 
 }

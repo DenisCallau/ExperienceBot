@@ -1,5 +1,9 @@
 package main;
 
+import main.bot.Bot;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Session {
 
     private int initialLevel;
@@ -10,7 +14,10 @@ public class Session {
     private long finishTime;
     private boolean newSession = true;
 
+    private static final Logger log = LogManager.getLogger(Session.class);
+
     public void startSession(int initialLevel, float initialExp) {
+        log.debug("Starting session");
         this.initialTime = System.currentTimeMillis();
         this.initialLevel = initialLevel;
         this.initialExp = initialExp;
@@ -18,6 +25,7 @@ public class Session {
     }
 
     public void endSession(int finishLevel, float finishExp) {
+        log.debug("Ending session");
         this.finishTime = System.currentTimeMillis();
         this.finishLevel = finishLevel;
         this.finishExp = finishExp;
