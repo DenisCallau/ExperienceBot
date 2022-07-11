@@ -5,7 +5,7 @@ The intention behind developing this application is to provide a way to track th
 Also, as this application don't access memory address, so it can't be considered hacking or violating game rules. Just in case, <strong>USE THIS SOFTWARE AT YOUR OWN RISK.</strong>
 I do not take any responsibilities for penalties in your game account.
 
-<h3>The first version is released:</h3>
+<h3>The first release:</h3>
 https://github.com/DenisCallau/ExperienceBot/releases/download/v0.1/ExperienceBot.jar
 <br><br>
 For now, you <strong>must</strong> install Google Tesseract and it <strong>must</strong> be in "C:/Program Files/" folder with default folder name. Note that can't be "Program Files (x86)".
